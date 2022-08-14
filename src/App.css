@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+
+/* NavBar */
+.navbar {
+  font-family: cursive;
+}
+.navbar-nav a {
+  font-size: 18px;
+}
+.buttons .btn i span {
+  font-family: cursive;
+}
+/* Home */
+/* Hero */
+.hero {
+  font-family:'Times New Roman', Times, serif;
+}
+.hero .card .left-angel-arrow-pointer {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 32px;
+  font-size: 45px;
+  z-index: 1;
+  cursor: pointer;
+  color: #212529c7;
+}
+.hero .card .right-angel-arrow-pointer {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 32px;
+  font-size: 45px;
+  z-index: 1;
+  cursor: pointer;
+  color: #212529c7;
+  transition: 1s;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.hero .card .card-img-overlay .container {
+  text-align: start;
+  
+}
+@media only screen and (max-width: 1074px) {
+  
+  .hero .card .card-img-overlay .container {
+    text-align: center;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero .dots-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
+.hero .dots-list .dots {
+  margin: 0 3px;
+  font-size: 35px;
+  z-index: 1;
+  cursor: pointer;
+  color: #212529c7;
+}
+/* Products */
+.container .row .col-12 h1 {
+  font-family: cursive;
+}
+.container .row .buttons .btn {
+  font-family: cursive;
+}
+.container .row .col-md-3 .card  {
+  font-family: cursive;
+}
+.error {
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+/* product-page */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .product-page .container  {
+  font-family: cursive;
+} */
