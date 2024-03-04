@@ -6,6 +6,7 @@ import products from '../data';
 
 export default function Product() {
     const {id} = useParams();
+    //eslint-disable-next-line no-unused-vars
     const [data,setData] = useState(products);
     const [product,setProduct] = useState(data);
 
@@ -13,10 +14,11 @@ export default function Product() {
         const productDetails1 = data.filter ( (prod) => prod.id===parseInt(id) );
         setProduct(productDetails1);
         
-        console.log(productDetails1)
+        console.log(id)
     }
     useEffect(() => {
         productDetails(id);
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
     
     return (

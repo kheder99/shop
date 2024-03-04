@@ -17,6 +17,7 @@ export default function ImageSlider({slides}) {
         const newIndex = slideIndex;
         setCurrentIndex(newIndex);
     }
+    console.log(slides[currentIndex].src);
     return (
         <div className='hero'>
             <div class="card text-dark bg-dark border-0">
